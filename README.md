@@ -174,10 +174,10 @@ We welcome contributions from:
 - 🏥 Extend to other cancers and medical conditions  
 
 ---
-## 🎥 Demo
 
-[![Watch Demo](demo-thumbnail.png)]([https://drive.google.com/file/d/1AbCdEfGhIjKlMnOpQ/view?usp=sharing](https://drive.google.com/file/d/1erRCfp0apL3JeYV-N4vAiZINFMXps_R4/preview))
+## 🎥 Live Demo
+
+<iframe src="https://drive.google.com/file/d/1erRCfp0apL3JeYV-N4vAiZINFMXps_R4/preview" width="100%" height="480" allow="autoplay"></iframe>
 
 ---
-
 © 2025 BrestaTalks — Empowering Arabic healthcare through AI 💜
