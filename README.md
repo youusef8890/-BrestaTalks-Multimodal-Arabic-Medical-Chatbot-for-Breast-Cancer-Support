@@ -178,10 +178,7 @@ We welcome contributions from:
 ## 🎥 Live Demo
 
 
-▶️ [Click here if the video doesn't load below](https://drive.google.com/file/d/1erRCfp0apL3JeYV-N4vAiZINFMXps_R4/preview)
-
-<iframe src="https://drive.google.com/file/d/1erRCfp0apL3JeYV-N4vAiZINFMXps_R4/preview" width="100%" height="480" allow="autoplay"></iframe>
-
+▶️ [Click here ](https://drive.google.com/file/d/1erRCfp0apL3JeYV-N4vAiZINFMXps_R4/preview)
 
 ---
 © 2025 BrestaTalks — Empowering Arabic healthcare through AI 💜
