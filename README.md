@@ -1,32 +1,23 @@
-
 # 🩺 BrestaTalks – Multimodal Arabic Medical Chatbot for Breast Cancer Support
 
-BrestaTalks is an advanced multimodal medical chatbot built to support Arabic-speaking users through their breast cancer journey. It combines Natural Language Processing (NLP), Visual Question Answering (VQA), voice input, and machine translation, enabling users to interact using text, images, and voice — all in Arabic.
+**BrestaTalks** is an advanced multimodal medical chatbot built to support Arabic-speaking users through their breast cancer journey. It combines **Natural Language Processing (NLP)**, **Visual Question Answering (VQA)**, **voice input**, and **machine translation**, enabling users to interact using **text, images, and voice** — all in Arabic.
 
-🧠 Think of it as ChatGPT for breast cancer that understands and explains Arabic medical questions and medical images like mammograms — with multilingual model integration for real-world impact.
+🧠 Think of it as **ChatGPT for breast cancer** that understands and explains Arabic medical questions and medical images like mammograms — with multilingual model integration for real-world impact.
 
 ---
 
-### 🚀 Key Features
+## 🚀 Key Features
 
+- 🗣️ **Arabic Language Support** – Right-to-left layout, proper localization, and medical terminology  
+- 💬 **Text + Voice Chat** – Users can ask medical questions via text or Arabic speech input  
+- 🖼️ **Medical Image Understanding (VQA)** – Ask questions about uploaded images (e.g., mammograms)  
+- 🌍 **Translation Layer** – Arabic↔English pipeline for medical image Q&A  
+- 🤖 **AI-Powered Answers** – Using powerful open-source LLMs and visual models  
+- 🧘‍♀️ **Emotional Support** – Compassionate and culturally-aware chatbot responses  
+- 📱 **Mobile-Friendly** – Fully responsive UI with dark mode support  
+- ☁️ **Cloud Ready** – Frontend deployed on Vercel, backend prepared for cloud/NGROK  
 
-🗣️ Arabic Language Support – Right-to-left layout, proper localization, and medical terminology
-
-💬 Text + Voice Chat – Users can ask medical questions via text or Arabic speech input
-
-🖼️ Medical Image Understanding (VQA) – Ask questions about uploaded images (e.g., mammograms)
-
-🌍 Translation Layer – Arabic↔English pipeline for medical image Q&A
-
-🤖 AI-Powered Answers – Using powerful open-source LLMs and visual models
-
-🧘‍♀️ Emotional Support – Compassionate and culturally-aware chatbot responses
-
-📱 Mobile-Friendly – Fully responsive UI with dark mode support
-
-☁️ Cloud Ready – Frontend deployed on Vercel, backend prepared for cloud/NGROK
-
-
+---
 
 ## 🧠 Underlying AI Models
 
@@ -35,9 +26,11 @@ BrestaTalks is an advanced multimodal medical chatbot built to support Arabic-sp
 | 📝 Text     | Arabic Q&A                 | Aya LLM (Arabic medical model)         |
 | 🔊 Voice    | Speech-to-Text             | Whisper (for Arabic voice recognition) |
 | 📊 Embedding| Semantic Search / Retrieval| multilingual-e5-large                  |
-| 🖼️ Image    | Visual Q&A                 | MedGEMMA                                |
+| 🖼️ Image    | Visual Q&A                 | MedGEMMA                               |
 | 🌐 Translation | English ↔ Arabic        | Helsinki-NLP/opus-mt-en-ar + inverse   |
+
 ---
+
 ## 🧬 How It Works
 
 1. **User Input**: Message sent via text, voice, or image  
@@ -48,7 +41,9 @@ BrestaTalks is an advanced multimodal medical chatbot built to support Arabic-sp
    - Uses **Whisper** for voice input processing  
    - Uses **multilingual-e5-large** for semantic search (e.g., dataset grounding)  
 4. **Output**: Arabic response returned and rendered in UI with proper RTL formatting
+
 ---
+
 ## 🌐 Stack Overview
 
 | Layer    | Technology                            |
@@ -59,6 +54,7 @@ BrestaTalks is an advanced multimodal medical chatbot built to support Arabic-sp
 | Deploy   | Vercel (Frontend), Ngrok / Cloud-ready (Backend) |
 
 ---
+
 ## ✅ System Highlights
 
 - 🔓 Custom user authentication and profile management  
@@ -69,53 +65,80 @@ BrestaTalks is an advanced multimodal medical chatbot built to support Arabic-sp
 
 ---
 
+## 📁 Project Pages
+
+```
+/pages
+  /chat       - Main multimodal chat interface
+  /auth/*     - Login, register, forgot password
+  /profile    - User account and preferences
+  /about      - Project goals and context
+  /contact    - Support & feedback
+/api/chat     - Core API endpoint
+```
+
+---
+
+## 🧪 Example Interaction
+
+**🤖 You are BRESTA TALKS, an Arabic medical assistant specialized in breast cancer. Always respond in Arabic with empathy and professionalism.**
+
+```plaintext
+User: أشعر بألم في الثدي، هل هذا طبيعي؟
+Bot: أفهم قلقك، وهذا شعور طبيعي تماماً. آلام الثدي يمكن أن تحدث لأسباب متعددة منها...
+```
+
+---
+
 ## 🚀 How to Run This Locally
 
-### Step 1: Prerequisites
+### 1. 📥 Download the Full Project from Google Drive  
+👉 [Click here to download the full project](https://drive.google.com/drive/folders/1znao-Suy9X2N777PSHuG4pW72HN7ht8d?usp=sharing)
+
+### 2. 🗂️ Extract the Files  
+Extract the zip file into a folder on your local machine.
+
+### 3. 📦 Install Dependencies
 
 Make sure you have installed:
 
-- **Node.js** (version 18 or higher)
-- **npm** or **yarn**
+- Node.js (v18 or higher)
+- npm or yarn
 
-### Step 2: Download the Project
-
-1. **Download the code** from the v0 interface (click "Download Code" button)
-2. **Extract the files** to a folder on your computer
-
-### Step 3: Install Dependencies
-
-Open terminal/command prompt in the project folder and run:
+Then, open a terminal in the project folder and run:
 
 ```bash
 npm install
 ```
 
-### Step 4: Set Up Environment Variables
+### 4. ⚙️ Set Up Environment Variables
 
-Create a `.env.local` file in the root directory with:
+Create a file called `.env.local` in the root directory and add:
 
-```plaintext
-NEXT_PUBLIC_BACKEND_URL=https://6aa3-34-141-200-111.ngrok-free.app
+```dotenv
+NEXT_PUBLIC_BACKEND_URL=https://your-ngrok-url.ngrok-free.app
 ```
 
-*(Replace with your actual ngrok URL)*
+Replace with the actual URL from running the backend notebook.
 
-### Step 5: Run the Development Server
+### 5. 🧠 Start the Backend
+
+Run the notebook `run_final_Back_end.ipynb` (in Colab or Jupyter)  
+Copy the `ngrok` URL printed at the end of the notebook and paste it into `.env.local`
+
+### 6. 🧪 Run the Development Server
 
 ```bash
 npm run dev
 ```
 
-### Step 6: Open in Browser
-
-Go to: `http://localhost:3000`
+Then open: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 📁 Your Project Structure
+## 📂 Project Structure
 
-```plaintext
+```
 breast-cancer-chatbot/
 ├── app/
 │   ├── api/chat/route.ts
@@ -134,32 +157,22 @@ breast-cancer-chatbot/
 
 ---
 
-## 🔧 Important Notes
+## 🤝 Contributions & Future Plans
 
-1. **Keep your Python backend running** on Google Colab
-2. **Update the ngrok URL** in `.env.local` when it changes
-3. **Restart the dev server** (`npm run dev`) after changing environment variables
-4. **Run the final backend model notebook**: `final_Back_end.ipynb`
+We welcome contributions from:
 
----
+- 🧑‍💻 Developers (Frontend, Backend, AI)
+- 🧑‍⚕️ Medical professionals (to refine medical content)
+- 🔤 Linguists (to enhance Arabic NLP)
+- 📊 ML Researchers (to push Arabic medical VQA)
 
-## 🤖 Models Used
+### Future Plans
 
-| Task               | Model                               |
-|--------------------|--------------------------------------|
-| Text Embedding     | `intfloat/multilingual-e5-large`     |
-| Text Generation    | `Aya` (Arabic LLM)                   |
-| Image QA           | `MedGEMMA`                           |
-| Translation Layer  | `Helsinki-NLP/opus-mt`               |
+- 🧠 Fine-tune Arabic medical LLMs  
+- 🗂️ Build open Arabic breast cancer datasets for VQA  
+- 🔊 Add Arabic voice output (TTS) for accessibility  
+- 🏥 Extend to other cancers and medical conditions  
 
 ---
 
-## 🧠 Future Plans
-
-🧠 Fine-tune Arabic medical LLMs
-
-🗂️ Build open Arabic breast cancer datasets for VQA
-
-🔊 Add Arabic voice output (TTS) for accessibility
-
-🏥 Extend to other cancers and medical conditions
+© 2025 BrestaTalks — Empowering Arabic healthcare through AI 💜
