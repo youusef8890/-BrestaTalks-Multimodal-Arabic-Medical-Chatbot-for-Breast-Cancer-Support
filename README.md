@@ -1,24 +1,71 @@
 
-# 🩺 Arabic Breast Cancer Chatbot with VQA
+# 🩺 BrestaTalks – Multimodal Arabic Medical Chatbot for Breast Cancer Support
 
-A full-stack intelligent assistant designed for breast cancer awareness, supporting Arabic text and image-based questions with real-time AI-generated answers.
+BrestaTalks is an advanced multimodal medical chatbot built to support Arabic-speaking users through their breast cancer journey. It combines Natural Language Processing (NLP), Visual Question Answering (VQA), voice input, and machine translation, enabling users to interact using text, images, and voice — all in Arabic.
+
+🧠 Think of it as ChatGPT for breast cancer that understands and explains Arabic medical questions and medical images like mammograms — with multilingual model integration for real-world impact.
 
 ---
 
-## 📌 System Overview
+### 🚀 Key Features
 
-### ✅ Arabic Q&A
 
-- Multilingual-E5-Large embedding model for understanding questions
-- Arabic LLM model: **Aya** for generating text responses
-- Real-time question answering in Arabic
-- Backend powered by FastAPI
+🗣️ Arabic Language Support – Right-to-left layout, proper localization, and medical terminology
 
-### ✅ Visual Question Answering (VQA)
+💬 Text + Voice Chat – Users can ask medical questions via text or Arabic speech input
 
-- Upload medical images (e.g., mammograms)
-- Image + Arabic question sent to **MedGEMMA** model
-- Translation Layer with **Helsinki-NLP/opus-mt** to return the answer in Arabic
+🖼️ Medical Image Understanding (VQA) – Ask questions about uploaded images (e.g., mammograms)
+
+🌍 Translation Layer – Arabic↔English pipeline for medical image Q&A
+
+🤖 AI-Powered Answers – Using powerful open-source LLMs and visual models
+
+🧘‍♀️ Emotional Support – Compassionate and culturally-aware chatbot responses
+
+📱 Mobile-Friendly – Fully responsive UI with dark mode support
+
+☁️ Cloud Ready – Frontend deployed on Vercel, backend prepared for cloud/NGROK
+
+
+
+## 🧠 Underlying AI Models
+
+| Input Type | Task                       | Model Used                            |
+|------------|----------------------------|----------------------------------------|
+| 📝 Text     | Arabic Q&A                 | Aya LLM (Arabic medical model)         |
+| 🔊 Voice    | Speech-to-Text             | Whisper (for Arabic voice recognition) |
+| 📊 Embedding| Semantic Search / Retrieval| multilingual-e5-large                  |
+| 🖼️ Image    | Visual Q&A                 | MedGEMMA                                |
+| 🌐 Translation | English ↔ Arabic        | Helsinki-NLP/opus-mt-en-ar + inverse   |
+---
+## 🧬 How It Works
+
+1. **User Input**: Message sent via text, voice, or image  
+2. **Frontend (Next.js)**: Captures, validates, and prepares input with Arabic support  
+3. **Backend (FastAPI)**:
+   - Uses **Aya** for Arabic medical Q&A  
+   - Uses **MedGEMMA + Helsinki** for VQA with translation layer  
+   - Uses **Whisper** for voice input processing  
+   - Uses **multilingual-e5-large** for semantic search (e.g., dataset grounding)  
+4. **Output**: Arabic response returned and rendered in UI with proper RTL formatting
+---
+## 🌐 Stack Overview
+
+| Layer    | Technology                            |
+|----------|----------------------------------------|
+| Frontend | Next.js 15, Tailwind CSS, TypeScript   |
+| Backend  | FastAPI (Python), RESTful APIs         |
+| AI Models| Aya, MedGEMMA, Whisper, multilingual-e5, Helsinki-NLP |
+| Deploy   | Vercel (Frontend), Ngrok / Cloud-ready (Backend) |
+
+---
+## ✅ System Highlights
+
+- 🔓 Custom user authentication and profile management  
+- 📲 Mobile-first responsive chat interface  
+- 🌐 Arabic NLP with real-time voice and text support  
+- 🧠 VQA with medical image understanding and translation  
+- 💬 Live chat experience with loading states, quick replies, and history  
 
 ---
 
@@ -107,9 +154,12 @@ breast-cancer-chatbot/
 
 ---
 
-## 🧠 Features
+## 🧠 Future Plans
 
-- Real-time Arabic chatbot for breast cancer
-- Visual question answering from medical images
-- Translation between English/Arabic for answers
-- Secure API with FastAPI backend
+🧠 Fine-tune Arabic medical LLMs
+
+🗂️ Build open Arabic breast cancer datasets for VQA
+
+🔊 Add Arabic voice output (TTS) for accessibility
+
+🏥 Extend to other cancers and medical conditions
